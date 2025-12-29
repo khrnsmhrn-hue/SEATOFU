@@ -1,0 +1,223 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* VANTA BACKGROUND */
+#vanta-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* LOGO */
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.logo img {
+  width: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* ARROWS */
+.nav-arrows {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.nav-arrows button {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-arrows button:hover {
+  background: #38bdf8;
+}
+
+/* SECTIONS */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sections-wrapper {
+  display: flex;
+  width: 600%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  padding: 120px 60px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* HOME */
+.section-home h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.section-home p {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56,189,248,0.4);
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.paper-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+}
+
+.paper-card:hover {
+  transform: translateY(-8px);
+}
+
+.paper-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.paper-card h3 {
+  padding: 15px 15px 5px;
+}
+
+.paper-card p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+/* KONTAK */
+.contact-form {
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section {
+    padding: 100px 30px 40px;
+  }
+
+  .section-home h1 {
+    font-size: 42px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+    padding: 8px 15px;
+  }
+}

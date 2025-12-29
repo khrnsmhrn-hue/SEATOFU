@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>SEATOFU Hub – From Sea to Soy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div id="vanta-bg"></div>
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="SEATOFU Logo" />
+    <span>SEATOFU</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul id="gooey-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#artikel">Artikel</a></li>
+      <li><a href="#komunitas">Komunitas</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Arrow Navigation -->
+  <div class="nav-arrows">
+    <button onclick="prevSection()">‹</button>
+    <button onclick="nextSection()">›</button>
+  </div>
+
+  <!-- Slider Container -->
+  <div class="container">
+    <div class="sections-wrapper" id="sections">
+
+      <!-- HOME -->
+      <section class="section section-home" id="home">
+        <div class="content">
+          <h1>SEATOFU</h1>
+          <p>
+            Inovasi pangan masa depan berbasis rumput laut Indonesia.
+            Sehat, lezat, dan berkelanjutan.
+          </p>
+          <a href="#program" class="cta-button">Jelajahi</a>
+        </div>
+      </section>
+
+      <!-- PROGRAM -->
+      <section class="section section-program" id="program">
+        <div class="content">
+          <h2>Program Unggulan</h2>
+          <div class="card-grid">
+            <div class="paper-card">
+              <img src="assets/images/program1.jpg" alt="Edukasi" />
+              <h3>Edukasi Pangan</h3>
+              <p>Workshop dan edukasi tentang pangan sehat berbasis laut.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/program2.jpg" alt="Inovasi" />
+              <h3>Inovasi Produk</h3>
+              <p>Riset dan pengembangan produk SEATOFU.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/program3.jpg" alt="UMKM" />
+              <h3>Pemberdayaan UMKM</h3>
+              <p>Dukungan UMKM pesisir Indonesia.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUK -->
+      <section class="section section-produk" id="produk">
+        <div class="content">
+          <h2>Produk SEATOFU</h2>
+          <div class="card-grid">
+            <div class="paper-card">
+              <img src="assets/images/produk1.jpg" alt="Original" />
+              <h3>SEATOFU Original</h3>
+              <p>Tinggi protein, rasa alami.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/produk2.jpg" alt="Pedas" />
+              <h3>SEATOFU Pedas</h3>
+              <p>Pedas gurih favorit anak muda.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/produk3.jpg" alt="Crispy" />
+              <h3>SEATOFU Crispy</h3>
+              <p>Camilan sehat dan renyah.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTIKEL -->
+      <section class="section section-artikel" id="artikel">
+        <div class="content">
+          <h2>Artikel & Resep</h2>
+          <div class="card-grid">
+            <div class="paper-card">
+              <img src="assets/images/artikel1.jpg" alt="Artikel" />
+              <h3>Manfaat Rumput Laut</h3>
+              <p>Kaya gizi dan baik untuk kesehatan.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/artikel2.jpg" alt="Resep" />
+              <h3>Resep SEATOFU Crispy</h3>
+              <p>Ide masakan praktis di rumah.</p>
+            </div>
+            <div class="paper-card">
+              <img src="assets/images/artikel3.jpg" alt="Lingkungan" />
+              <h3>Pangan Berkelanjutan</h3>
+              <p>Dukung bumi dengan plant-based food.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KOMUNITAS -->
+      <section class="section section-komunitas" id="komunitas">
+        <div class="content">
+          <h2>Komunitas</h2>
+          <p>
+            Bergabung dengan komunitas SEATOFU untuk hidup sehat
+            dan mendukung pangan lokal Indonesia.
+          </p>
+        </div>
+      </section>
+
+      <!-- KONTAK -->
+      <section class="section section-kontak" id="kontak">
+        <div class="content">
+          <h2>Kontak Kami</h2>
+          <p>Email: info@seatofu.id</p>
+          <p>WhatsApp: +62 8xxx xxxx xxxx</p>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Nama" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Pesan"></textarea>
+            <button type="submit" class="cta-button">Kirim</button>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
